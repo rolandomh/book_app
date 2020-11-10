@@ -7,7 +7,6 @@ require('ejs');
 const express = require('express');
 const superagent = require('superagent');
 const pg = require('pg');
-const { response } = require('express');
 //new part
 const methodOverride = require('method-override');
 // Application Setup
@@ -90,7 +89,7 @@ function viewDetails(req, res){
 function addBook(req, res){
   const book = req.body;
   const checkData = 'SELECT * FROM books WHERE isbn=$1';
-  const checkParam = [re.body.isbn];
+  const checkParam = [req.body.isbn];
   const saveData = 'INSERT INTO books (author, title, isbn, image_url, description, bookshelf) VALUES($1, $2, $3, $4, $5, $6) RETURNING *';
   const saveParam = [book.author, book.title, book.isbn, book.image_url, book.description, book.bookshelf];
   client.query(checkData, checkParam)
