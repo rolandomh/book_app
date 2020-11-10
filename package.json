@@ -1,28 +1,28 @@
 {
-    "name": "bookApp",
-    "version": "1.0.0",
-    "description": "Library to google API",
-    "main": "server.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server.js"
-    },
-    "repository": {
-      "type": "github",
-      "url": "https://github.com/rolandomh/book_app "
-    },
-    "author": "RoMH_art81/DapInitial notes assist",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/rolandomh/book_app"
-    },
-    "homepage": "https://github.com/rolandomh",
-    "dependencies": {
-      "dotenv": "^8.2.0",
-      "ejs": "^3.1.5",
-      "express": "^4.17.1",
-      "method-override": "^3.0.0",
-      "pg": "^8.4.2",
-      "superagent": "^6.1.0"
-    }
+  "name": "bookApp",
+  "version": "1.0.0",
+  "description": "Library to google API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/rolandomh/book_app "
+  },
+  "author": "RoMH_art81/DapInitial notes assist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolandomh/book_app"
+  },
+  "homepage": "https://github.com/rolandomh",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "pg": "^8.4.2",
+    "superagent": "^6.1.0"
   }
+}
