@@ -1,0 +1,13 @@
+node_modules/
+package-lock.json
+.DS_Store
+.npm
+.eslintcache
+.env
+.env.test
+.eslintrc.json
+# Logs // I copied this portion. Are we supposed to junk bloat up our code in projects? 
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
