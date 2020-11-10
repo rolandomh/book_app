@@ -88,7 +88,7 @@ function viewDetails(req, res){
 }
 // addBook Func
 function addBook(req, res){
-  const book = re.body;
+  const book = req.body;
   const checkData = 'SELECT * FROM books WHERE isbn=$1';
   const checkParam = [re.body.isbn];
   const saveData = 'INSERT INTO books (author, title, isbn, image_url, description, bookshelf) VALUES($1, $2, $3, $4, $5, $6) RETURNING *';
