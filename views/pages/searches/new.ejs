@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<header class="flex-row">
+    <h1 class="flex-column">Best Books</h1>
+    <button id="hamburger-icon"></button>
+  </header>
+  <h2>Search By Title or Author</h2>
+  <main class="flex-row">
+
+
+     add a method 
+    <form id="book-search" class="flex-column">
+        <form  id="create-form" action="/searches" method="post">
+                
+
+        <input type="form" placeholder="Enter a title or author" class="search-form flex-row" />
+      <div class="flex-row">
+        <input type="radio" id="title" name="search-book-by" value="title" class="flex-column" />
+        <label for="title" class="flex-column">Title</label>
+      </div>
+      <div class="flex-row">
+        <input type="radio" id="author" name="search-book-by" value="author" class="flex-column" />
+        <label for="author" class="flex-column">Author</label>
+      </div>
+      
+      <button type="submit">Search the Google Books API</button>
+    </form>
+  </main>
+  <nav id="footer-menu">
+    <button class="footer-button"></button>
+    <button class="footer-button"></button>
+    <button class="footer-button"></button>
+    <button class="footer-button"></button>
+  </nav>  
+</body>
+</html>

@@ -28,6 +28,7 @@ app.get('/searches/new', searchPage);
 app.post('/searches', callAPI);
 app.get('/books/:id', viewDetails);
 app.post('/books', addBook);
+// app.get('/books', listBook);
 app.put('/edit/:id', updateDetails);
 app.delete('/books/:id', deleteBook);
 
