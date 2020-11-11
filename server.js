@@ -7,22 +7,16 @@ require('ejs');
 const express = require('express');
 const superagent = require('superagent');
 const pg = require('pg');
-//new part
 const methodOverride = require('method-override');
-// Application Setup
 const PORT = process.env.PORT || 3000;
-// Start express
 const app = express();
 const client = new pg.Client(process.env.DATABASE_URL);
 //set default view engine
 app.set('view engine', 'ejs');
-//server pages to client
 app.use(express.static('./public'));
-// //Decode post data
 app.use(express.urlencoded({extended : true}));
-// deep water routes
 app.use(methodOverride('_method'));
-//routes ...continued
+// deep water routes
 app.get('/', homePage);
 app.get('/searches/new', searchPage);
 app.post('/searches', callAPI);
